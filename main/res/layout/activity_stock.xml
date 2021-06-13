@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Stock">
+
+    <RadioGroup
+        android:id="@+id/radioGroupMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/background_no_border"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMovieList"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:onClick="btn_request"
+            android:background="@drawable/custom_button_background_two"
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/custom_text_color"
+            android:gravity="center"
+            android:text="Requests" />
+
+        <RadioButton
+            android:id="@+id/radioComingMovies"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_background_two"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="Stock"
+            android:textColor="@drawable/custom_text_color" />
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Inventory">
+
+    <TextView
+        android:id="@+id/rquan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Inventory Register"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/RemainingQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remaining Quantity of Item"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="18sp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/ReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Name"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="18sp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Complete Request"
+        android:onClick="btn_success"
+        android:textSize="22sp"
+        android:background="@drawable/button_rounded"
+        />
+
+</LinearLayout>
